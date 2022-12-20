@@ -42,7 +42,6 @@ html,body{
 a:hover{
     border-top: 1px solid blue;
     color: #0065fc;
-    display: block;
 }
 /*Barre de recherche*/
 .bordureSearch{
@@ -125,5 +124,4 @@ a:hover{
     height: 650px;
     margin-left: 20px;
     border-radius: 10px;
-    flex-direction: row;
 }
