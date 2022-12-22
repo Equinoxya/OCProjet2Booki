@@ -3,6 +3,10 @@ html,body{
     font-family: 'Raleway', sans-serif;
     padding-left: 2%;
     padding-right: 2%;
+    height: 1440px;
+}
+.colorBlanc{
+    background-color: #DEEBFF;
 }
 .flexCenter{
     display: flex;
@@ -19,6 +23,11 @@ html,body{
     justify-content: space-between;
     align-items: center;
 }
+.flexStart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .sizeLiens{
     width: 20%;
@@ -31,6 +40,7 @@ html,body{
 .decorationNone{
     text-decoration: none;
 }
+/*Mettre en %*/
 .logo{
     width: 62px;
     height: 19px;
@@ -39,11 +49,15 @@ html,body{
     width:160px;
     height: 99px;
 }
-a:hover{
+
+.barre:hover{
     border-top: 1px solid blue;
+}
+.barre1:hover{
     color: #0065fc;
 }
 /*Barre de recherche*/
+/*Mettre en %*/
 .bordureSearch{
     width: 400px;
     border-radius: 10px;
@@ -60,6 +74,9 @@ a:hover{
 }
 .backBleu{
     background-color: #0065fc;
+}
+.colorBleu{
+    color: #0065fc;
 }
 .recherche{
     height: 50px;
@@ -116,8 +133,10 @@ a:hover{
     height: 650px;
     margin-right: 20px;
     border-radius: 10px;
-    flex-direction: row;
-
+}
+.titleBloc1{
+    margin-top: 4%;
+    margin-left: 4%;
 }
 .popBloc{
     flex: 1;
@@ -125,3 +144,39 @@ a:hover{
     margin-left: 20px;
     border-radius: 10px;
 }
+.cards{
+    width: 25%;
+    height: 25%;
+    margin-left: 5%;
+    border-radius: 20px;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 8%;
+}
+
+footer{
+    background-color: #d9d9d9;
+    display: block;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: auto;
+    height: 15%;
+    margin-top: 5%;
+}
+.blocPied{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+}
+ul{
+    list-style: none;
+}
+.colorLien2{
+    color: black;
+}
+.propos{
+    align-items: flex-start;
+}
+
