@@ -1,7 +1,7 @@
 *{
     max-width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 2%;
+    margin-left: 2%;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -23,6 +23,7 @@ nav img{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 .menu{
     display: flex;
@@ -78,6 +79,7 @@ form{
     align-items: center;  
     border: #d9d9d9 1px solid;
     border-radius: 10px 0 0 10px;  
+    margin: 0;
 }
 .iconLoc{
     width: 15%;
@@ -92,10 +94,11 @@ form{
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .barre{
     margin: 0;
-    width: 70%;
+    width: 80%;
     height: 98%;
     border-style: none;
     padding-left: 5%;
@@ -145,7 +148,6 @@ form{
     justify-content: center;
     height: 85%;
     margin: 0;
-    gap: 20px;
     border: #d9d9d9 2px solid;
     border-radius: 25px;
 }
@@ -195,6 +197,7 @@ header h2{
     width: 20px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
+    margin: 0;
     margin-right: 1%;
 }
 .fa-info{
@@ -209,6 +212,7 @@ header h2{
 .titlePop{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     margin: 0;
     padding-left: 2%;
     padding-top: 5%;
@@ -216,6 +220,7 @@ header h2{
 .conteneurs {
     display: flex;
     justify-content: space-between;
+    margin: 0;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -264,7 +269,6 @@ header h2{
     flex-wrap: wrap;
     width: 95%;
     height: 60%;
-    margin-top: 5%;
 }
 .blocLien1{
     display: block;
@@ -276,7 +280,7 @@ header h2{
 .hebTaille{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 29%;
     height: 200px;
     background-color: white;
     border-radius: 20px;
@@ -291,11 +295,12 @@ header h2{
 }
 
 .conteneurs_hebergement img{
-    width: 97%;
+    width: 96%;
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     border: white 5px  solid;
+    margin: 0;
 }
 .leg{
     display: flex;
@@ -330,7 +335,6 @@ header h2{
     width: 100%;
     height: 25%;
     border-radius: 20px;
-    background-color: white;
 }
 .conteneurs_populaire img{
     width: 40%;
@@ -392,9 +396,9 @@ header h2{
     margin-top: 5%;
     margin-bottom: 5%;
     width: 100%;
-    height: 600px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 .act h1{
     margin: 0;
@@ -411,7 +415,7 @@ header h2{
 .conteneurAct a{
     display: block;
     width: 20%;
-    height: 450px;
+    height: 80%;
     margin: 0;
     border-radius: 25px;
     box-shadow: 2px 5px 10px #d9d9d9;
@@ -428,6 +432,7 @@ header h2{
     height: 380px;
     object-fit: cover;
     border-radius: 25px 25px 0 0 ;
+    margin: 0;
 }
 .conteneurAct h3{
     margin-left: 5%;
@@ -440,9 +445,10 @@ footer {
     background: #f2f2f2;
     display: flex;
     justify-content: space-between;
-    font-size: medium;
+    align-items: center;
     width: 100%;
     height: 225px;
+    margin: 0;
 }
 
 footer section {
@@ -465,4 +471,54 @@ footer a {
 footer h3 {
     margin: 0;
 
+}
+
+@media screen and (max-width:991px) {
+    *{  margin-left: 2%;
+        margin-right: 2%;
+    }
+    form{
+        width: 45%;
+    }
+    .barreRecherche{
+        margin: 0;
+    }
+    .barreFilter{
+        width: 100%;
+    }
+    .conteneurs{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .conteneurs_hebergement{
+        width: 100%;
+    }
+    .conteneurs_populaire{
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 5%;
+    }
+    .conteneurs_populaire img{
+        width: 10vw;
+        height: 15vh;
+    }
+    .cardsPop{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    .titlePop{
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 2%;
+    }
+    .conteneurAct a{
+        width: 23%;
+        height: 62%;
+    }
+    .conteneurAct img{
+        width: 100%;
+        height: 30vh;
+    }
 }
