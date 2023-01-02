@@ -1,8 +1,9 @@
 *{
     max-width: 1400px;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 nav{
@@ -38,7 +39,6 @@ nav a{
     align-items: center;
     justify-content: center;
     color: black;
-    font-weight: bold;
     text-decoration: none;
 }
 .boutonNav{
@@ -126,33 +126,40 @@ form{
     width: 20%;
     border-radius: 0 10px 10px 0;
     display: none;
+    margin: 0;
 }
 /*Filtres*/
 .barreFilter{
     font-weight: bold;
     display: flex;
-    width: 80%;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+    gap: 30px;
     margin: 2% 0 2% 0;
-    height: 3em;
 }
 .txtFilter{
     font-weight: bold;
     margin: 0;
+}
+.blocFiltres{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 80%;
+    justify-content: space-between;
 }
 .filtres{
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    height: 85%;
+    box-sizing: border-box;
     margin: 0;
     border: #d9d9d9 2px solid;
     border-radius: 25px;
 }
 .iconTxt{
-    padding: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -295,7 +302,7 @@ header h2{
 }
 
 .conteneurs_hebergement img{
-    width: 96%;
+    width: 100%;
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -307,6 +314,7 @@ header h2{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 5%;
+    justify-content: space-evenly;
     height: 35%;
     font-size: 15px;
 }
@@ -319,6 +327,7 @@ header h2{
     flex-direction: row;
     margin: 0;
     height: 100%;
+    background-color: #ffffff;
     box-shadow: #d9d9d9 1px 1px 10px 0;
     border-radius: 20px;
 }
@@ -341,6 +350,7 @@ header h2{
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     border: #ffffff solid 5px;
+    margin: 0;
 }
 .conteneurs_populaire h3{
     margin: 0;
@@ -364,18 +374,21 @@ header h2{
     flex-wrap: wrap;
     height: 35%;
     padding-top: 5%;
+    gap:5px;
 }
 .legPop{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 25%;
 }
 .note{
     display: flex;
     margin-block: auto;
     margin: 0;
-    align-items: flex-end;
+    align-items: center;
+    font-size: 12px;
     height: 40%;
 }
 
@@ -409,7 +422,6 @@ header h2{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
 }
 .conteneurAct a{
@@ -454,12 +466,12 @@ footer {
 footer section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: flex-start;
     margin: 0;
     height: 78%;
+    gap: 10px;
     margin-top: 2%;
-    margin-right: 13%;
+    margin-right: 9%;
     padding-left: 5%;
 }
 
@@ -473,7 +485,7 @@ footer h3 {
 
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:992px) {
     *{  margin-left: 2%;
         margin-right: 2%;
     }
@@ -485,6 +497,16 @@ footer h3 {
     }
     .barreFilter{
         width: 100%;
+    }
+    .blocFiltres{
+        width: 100%;
+        align-items: center;
+    }
+    .filtres{
+        font-size: 12px;
+    }
+    .iconTxt{
+        padding: 10px;
     }
     .conteneurs{
         flex-direction: column;
@@ -501,7 +523,7 @@ footer h3 {
     }
     .conteneurs_populaire img{
         width: 10vw;
-        height: 15vh;
+        height: 13vh;
     }
     .cardsPop{
         flex-wrap: nowrap;
@@ -517,8 +539,110 @@ footer h3 {
         width: 23%;
         height: 62%;
     }
+    .conteneurAct figure{
+        height: 335px;
+    }
     .conteneurAct img{
         width: 100%;
         height: 30vh;
+    }
+    .conteneurAct h3{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    .blocNav{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    nav img{
+        width: 15%;
+    }
+    .menu{
+        width: 100%;
+    }
+    .boutonNav{
+        border-bottom: #F2F2F2 2px solid;
+    }
+    form{
+        width: 100%;
+    }
+    .loupe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button{
+        display: none;
+    }
+    .barreFilter{
+        flex-wrap: wrap; 
+        gap: 10px;   
+    }
+    .blocFiltres{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .filtres{
+        width: 40%;
+        padding: 5px;
+    }
+    .conteneurs{
+        flex-direction: column-reverse;
+    }
+    .cardsPop{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .popTaille{
+        width: 98%;
+    }
+    .conteneurs_populaire img{
+        width: 61vw;
+        height: 17vh;
+    }
+    .cardsHeb{
+        flex-direction: column;
+    }
+    .hebTaille{
+        width: 98%;
+    }
+    .afficherplus{
+        display: none;
+    }
+    .conteneurAct{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .conteneurAct a{
+        width: 100%;
+    }
+    .conteneurAct figure{
+        height: 20em;
+    }
+    
+    footer{
+        flex-direction: column;
+        align-items: baseline;
+        height: auto;
+    }
+    footer section{
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
