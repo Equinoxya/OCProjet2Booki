@@ -145,7 +145,7 @@ form{
     display: flex;
     flex-direction: row;
     margin: 0;
-    width: 80%;
+    width:60%;
     justify-content: space-between;
 }
 .filtres{
@@ -485,6 +485,20 @@ footer h3 {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:992px) {
     *{  margin-left: 2%;
         margin-right: 2%;
@@ -501,6 +515,7 @@ footer h3 {
     .blocFiltres{
         width: 100%;
         align-items: center;
+        justify-content: space-around;
     }
     .filtres{
         font-size: 12px;
@@ -513,11 +528,11 @@ footer h3 {
         gap: 20px;
     }
     .conteneurs_hebergement{
-        width: 100%;
+        width: 95%;
     }
     .conteneurs_populaire{
         flex-direction: row;
-        width: 100%;
+        width: 95%;
         flex-wrap: wrap;
         padding-bottom: 5%;
     }
@@ -530,31 +545,49 @@ footer h3 {
         flex-direction: row;
         width: 100%;
     }
+    .legPop{
+        gap: 35%;
+    }
     .titlePop{
         width: 100%;
         justify-content: space-between;
         padding-top: 2%;
     }
+    .act{
+        width: 95%;
+    }
     .conteneurAct a{
         width: 23%;
-        height: 62%;
+        height: 18em;
     }
     .conteneurAct figure{
         height: 335px;
     }
     .conteneurAct img{
         width: 100%;
-        height: 30vh;
+        height: 25vh;
     }
     .conteneurAct h3{
         margin-top: 0;
     }
+    footer{
+        width: 95%;
+    }
 }
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:768px) {
-    body{
-        margin-left: 0;
-        margin-right: 0;
+    *{
+        margin: 0;
     }
     header{
         display: flex;
@@ -566,18 +599,33 @@ footer h3 {
     .blocNav{
         flex-direction: column;
         flex-wrap: nowrap;
+        height: 130px;
+    }
+    nav{
+        margin-bottom: 10%;
+        margin-top: 2%;
     }
     nav img{
         width: 15%;
     }
     .menu{
         width: 100%;
+        justify-content: space-between;
     }
     .boutonNav{
-        border-bottom: #F2F2F2 2px solid;
+        border-bottom: #F2F2F2 3px solid;
+        width: 50%;
+    }
+    header h2{
+        margin-left: 2%;
+        width: 90%;
+    }
+    .desc{
+        margin-left: 2%;
     }
     form{
-        width: 100%;
+        width: 95%;
+        margin-left: 2%;
     }
     .loupe{
         display: flex;
@@ -594,32 +642,66 @@ footer h3 {
     .blocFiltres{
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 10px;
     }
     .filtres{
         width: 40%;
         padding: 5px;
     }
+    .txtFilter{
+        margin-left: 2%;
+    }
+    .txt{
+        align-items: flex-start;
+    }
     .conteneurs{
         flex-direction: column-reverse;
+    }
+    .conteneurs_hebergement{
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .conteneurs_populaire{
+        width: 100%;
+        border-radius: 0;
     }
     .cardsPop{
         flex-direction: column;
         gap: 20px;
     }
+    .titlePop{
+        padding: 5%;
+    }
+    .conteneurs h1{
+        margin: 5%;
+    }
+    .note{
+        height: 34%;
+    }
     .popTaille{
-        width: 98%;
+        width: 96%;
+        margin-left: 2%;
+    }
+    .legPop{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 50%;
+    }
+    .legende{
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     .conteneurs_populaire img{
-        width: 61vw;
-        height: 17vh;
+        width: 35%;
     }
     .cardsHeb{
         flex-direction: column;
+        width: 100%;
     }
     .hebTaille{
-        width: 98%;
+        width: 96%;
+        margin-left: 2%;
     }
     .afficherplus{
         display: none;
@@ -628,11 +710,22 @@ footer h3 {
         flex-direction: column;
         gap: 20px;
     }
+    .act{
+        margin-left: 3%;
+    }
     .conteneurAct a{
         width: 100%;
+        height: 14em;
     }
     .conteneurAct figure{
-        height: 20em;
+        height: 15em;
+    }
+    .conteneurAct img{
+        width: 100%;
+        height: 18vh;
+    }
+    .conteneurAct h3{
+        margin-top: 4%;
     }
     
     footer{
