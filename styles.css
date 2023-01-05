@@ -49,7 +49,7 @@ nav a{
 }
 
 nav a:hover{
-    border-top: 1px solid blue;
+    border-top: 2px solid blue;
     color: #0065fc;
 }
 
@@ -107,6 +107,7 @@ form{
 #Search::placeholder{
     font-weight: 700;
     font-size: 18px;
+    opacity: 1;
     
 }
 .button{
@@ -221,7 +222,6 @@ header h2{
     align-items: center;
     justify-content: space-evenly;
     margin: 0;
-    padding-left: 8%;
     padding-top: 9%;
     padding-right: 5%;
 }
@@ -512,6 +512,11 @@ footer h3 {
     nav img{
         width: 9%;
     }
+    nav a:hover{
+        border-bottom: 2px solid blue;
+        border-top: 0;
+    color: #0065fc;
+    }
     .menu{
         width: 30%;
     }
@@ -632,12 +637,13 @@ footer h3 {
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 10%;
 
     }
     .blocNav{
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 130px;
+        height: 100px;
     }
     nav{
         margin-bottom: 10%;
@@ -685,6 +691,7 @@ footer h3 {
     .filtres{
         width: 43%;
         padding: 5px;
+        justify-content: flex-start;
     }
     .txtFilter{
         margin-left: 2%;
