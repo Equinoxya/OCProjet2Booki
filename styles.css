@@ -1,7 +1,7 @@
 *{
     max-width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 2%;
+    margin-left: 2%;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
@@ -53,7 +53,7 @@ nav a:hover{
     color: #0065fc;
 }
 
-header h2{
+h1{
     margin: 0;
 }
 .desc{
@@ -164,6 +164,7 @@ form{
     display: flex;
     align-items: center;
     gap: 15px;
+    margin: auto;
 }
 .filtres:hover{
     background-color: #d9d9d9;
@@ -186,9 +187,6 @@ form{
     align-items: center;
     flex-direction: row;
     width: 100%;
-    margin: 0;
-}
-header h2{
     margin: 0;
 }
 .txt1{
@@ -220,15 +218,14 @@ header h2{
 .titlePop{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 0;
+    justify-content: space-between;
+    width: 90%;
     padding-top: 9%;
-    padding-right: 5%;
 }
 .titlePop h2{
     margin: 0;
 }
-.conteneurs {
+#hebergement {
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -270,7 +267,7 @@ header h2{
     border-radius: 20px;
     margin: 0;
 }
-.conteneurs h1{
+.conteneurs_hebergement h2{
     margin-top: 4%;
     margin-left: 4%;
 }
@@ -408,7 +405,7 @@ header h2{
 
 
 /*Activités*/
-.act{
+#Activites{
     margin: 0;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -417,7 +414,7 @@ header h2{
     flex-direction: column;
     gap: 40px;
 }
-.act h1{
+.act h2{
     margin: 0;
 }
 .conteneurAct{
@@ -440,6 +437,8 @@ header h2{
 }
 .conteneurAct figure{
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .conteneurAct img{
@@ -451,7 +450,6 @@ header h2{
     margin: 0;
 }
 .conteneurAct h3{
-    margin-left: 5%;
     font-weight: 700;
 }
 
@@ -504,11 +502,6 @@ footer h3 {
 
 
 @media screen and (max-width:991px) {
-    nav{
-        margin-left: 2%;
-        margin-right: 2%;
-        width: 95%;
-    }
     nav img{
         width: 9%;
     }
@@ -518,53 +511,48 @@ footer h3 {
     color: #0065fc;
     }
     .menu{
-        width: 30%;
+        width: 40%;
     }
-    h2{
-        margin-left: 2%;
-    }
-    .desc{
-        margin-left: 2%;
-    }
-    .txt{
-        margin-left: 2%;
+    h1{
+        margin: 0;
+        margin-bottom: 2%;
     }
     form{
-        width: 45%;
-        margin-left: 2%;
+        width: 50%;
     }
     .barreRecherche{
         margin: 0;
     }
-    .barreFilter{
-        width: 90%;
-        margin-left: 2%;
-    }
     .blocFiltres{
-        width: 100%;
+        width: 91%;
         align-items: center;
         justify-content: space-around;
     }
     .filtres{
-        font-size: 12px;
+        font-size: 15px;
+        margin: 0;
     }
     .iconTxt{
         padding: 10px;
+
     }
     .parentI{
         width: 24px;
     }
-    .conteneurs{
+    #hebergement{
         flex-direction: column;
         gap: 20px;
-        margin-left: 2%;
     }
     .conteneurs_hebergement{
-        width: 95%;
+        width: 100%;
+    }
+    .cardsHeb{
+        width: 100%;
+        margin: 0;
     }
     .conteneurs_populaire{
         flex-direction: row;
-        width: 95%;
+        width: 100%;
         flex-wrap: wrap;
         padding-bottom: 5%;
     }
@@ -594,7 +582,7 @@ footer h3 {
         margin-left: 2%;
         margin-top: 1%;
     }
-    .act{
+    #Activites{
         width: 95%;
         margin-left: 2%;
     }
@@ -602,15 +590,13 @@ footer h3 {
         width: 23%;
         height: 18em;
     }
-    .conteneurAct figure{
-        height: 335px;
-    }
     .conteneurAct img{
         width: 100%;
         height: 25vh;
     }
     .conteneurAct h3{
-        margin-top: 0;
+        font-size: 15px;
+        margin-left: 5%;
     }
     footer{
         width: 95%;
@@ -658,7 +644,7 @@ footer h3 {
         border-bottom: #F2F2F2 3px solid;
         width: 50%;
     }
-    h2{
+    h1{
         margin-left: 2%;
         margin-bottom: 5%;
     }
@@ -689,7 +675,7 @@ footer h3 {
         flex-wrap: wrap;
         align-items: center;
         gap: 10px;
-        width: 96%;
+        width: 100%;
     }
     .filtres{
         width: 48%;
@@ -708,7 +694,7 @@ footer h3 {
         margin-bottom: 10%;
         margin-left: 2%;
     }
-    .conteneurs{
+    #hebergement{
         flex-direction: column-reverse;
         margin: 0;
     }
@@ -727,7 +713,7 @@ footer h3 {
     .titlePop{
         padding: 5%;
     }
-    .conteneurs h1{
+    .conteneurs_hebergement h2{
         margin: 5%;
     }
     .note{
@@ -764,7 +750,7 @@ footer h3 {
         flex-direction: column;
         gap: 20px;
     }
-    .act{
+    #Activites{
         margin-left: 3%;
     }
     .conteneurAct a{
@@ -784,8 +770,9 @@ footer h3 {
     
     footer{
         flex-direction: column;
-        align-items: baseline;
+        align-items: flex-start;
         height: auto;
+        width: 100%;
     }
     footer section{
         margin: 0;
