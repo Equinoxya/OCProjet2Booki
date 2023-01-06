@@ -202,7 +202,7 @@ header h2{
     color: #0065fc;    
 }
 .parentI{
-    width: 20px;
+    width: 24px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
     margin: 0;
@@ -397,7 +397,7 @@ header h2{
 }
 
 .afficherplus{
-    width: 12%;
+    width: 20%;
     height: 5%;
     margin: 0;
     margin-bottom: 5%;
@@ -520,7 +520,7 @@ footer h3 {
     .menu{
         width: 30%;
     }
-    header h2{
+    h2{
         margin-left: 2%;
     }
     .desc{
@@ -637,8 +637,6 @@ footer h3 {
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 10%;
-
     }
     .blocNav{
         flex-direction: column;
@@ -660,12 +658,13 @@ footer h3 {
         border-bottom: #F2F2F2 3px solid;
         width: 50%;
     }
-    header h2{
+    h2{
         margin-left: 2%;
-        width: 90%;
+        margin-bottom: 5%;
     }
     .desc{
         margin-left: 2%;
+        margin-bottom: 5%;
     }
     form{
         width: 95%;
@@ -682,22 +681,32 @@ footer h3 {
     .barreFilter{
         flex-wrap: wrap; 
         gap: 10px;   
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
     .blocFiltres{
         flex-wrap: wrap;
         align-items: center;
         gap: 10px;
+        width: 96%;
     }
     .filtres{
-        width: 43%;
+        width: 48%;
         padding: 5px;
         justify-content: flex-start;
+        margin: 0;
+    }
+    .filtres p{
+        font-size: 10px;
     }
     .txtFilter{
         margin-left: 2%;
     }
     .txt{
         align-items: flex-start;
+        margin-bottom: 10%;
+        margin-left: 2%;
     }
     .conteneurs{
         flex-direction: column-reverse;
