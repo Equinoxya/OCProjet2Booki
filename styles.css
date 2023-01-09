@@ -46,14 +46,12 @@ nav a{
     width: 100%;
     height: 100%;
 }
-
+h1{
+    margin: 0;
+}
 nav a:hover{
     border-top: 2px solid blue;
     color: #0065fc;
-}
-
-h1{
-    margin: 0;
 }
 .desc{
     width: 100%;
@@ -410,17 +408,18 @@ form{
     margin-top: 5%;
     margin-bottom: 5%;
     width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 #Activites h2{
     margin: 0;
+    width: 40%;
 }
 .conteneurAct{
     margin: 0;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
 
@@ -428,7 +427,6 @@ form{
 .conteneurAct a{
     display: block;
     width: 20%;
-    height: 80%;
     margin: 0;
     border-radius: 25px;
     box-shadow: 2px 5px 10px #d9d9d9;
@@ -462,7 +460,6 @@ form{
 footer {
     background: #f2f2f2;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 225px;
@@ -587,8 +584,7 @@ footer h3 {
         margin-top: 1%;
     }
     #Activites{
-        width: 95%;
-        margin-left: 2%;
+        height: auto;
     }
     .conteneurAct a{
         width: 23%;
@@ -599,12 +595,12 @@ footer h3 {
         height: 25vh;
     }
     .conteneurAct h3{
-        font-size: 15px;
-        margin-left: 5%;
+        font-size: 16px;
+    margin-left: 10%;
     }
-    footer{
-        width: 95%;
-        margin-left: 2%;
+    footer section{
+        margin-right: 8%;
+        font-size: 13px;
     }
 }
 
@@ -658,12 +654,11 @@ footer h3 {
         margin-bottom: 5%;
     }
     .desc{
-        margin-left: 2%;
-        margin-bottom: 5%;
+        margin: 20px 20px 30px 10px;
     }
     form{
         width: 95%;
-        margin-left: 2%;
+        margin: 20px 20px 30px 10px;
     }
     .loupe{
         display: flex;
@@ -677,14 +672,13 @@ footer h3 {
         flex-wrap: wrap; 
         gap: 10px;   
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin: 10px 10px 10px 10px;
     }
     .blocFiltres{
         flex-wrap: wrap;
         align-items: center;
         gap: 10px;
-        width: 100%;
+        width: 90%;
     }
     .filtres{
         width: 48%;
@@ -700,11 +694,11 @@ footer h3 {
     }
     .iconTxt{
         margin: 0;
+        gap: 5px;
     }
     .txt{
         align-items: flex-start;
-        margin-bottom: 10%;
-        margin-left: 2%;
+        margin: 20px 20px 30px 10px;
     }
     #hebergement{
         flex-direction: column-reverse;
@@ -721,6 +715,7 @@ footer h3 {
     .cardsPop{
         flex-direction: column;
         gap: 20px;
+        margin: 0 10px 0 10px;
     }
     .titlePop{
         padding: 5%;
@@ -749,11 +744,11 @@ footer h3 {
     }
     .cardsHeb{
         flex-direction: column;
-        width: 100%;
+        width: 95%;
+        margin: 0 10px 0 10px;
     }
     .hebTaille{
-        width: 96%;
-        margin-left: 2%;
+        width: 100%;
     }
     .afficherplus{
         display: none;
@@ -761,23 +756,24 @@ footer h3 {
     .conteneurAct{
         flex-direction: column;
         gap: 20px;
+        height: auto;
     }
     #Activites{
-        margin-left: 3%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .conteneurAct a{
-        width: 100%;
-        height: 14em;
-    }
-    .conteneurAct figure{
-        height: 15em;
+        width: 95%;
+        height: auto;
     }
     .conteneurAct img{
         width: 100%;
-        height: 18vh;
+        height: 13vh;
     }
     .conteneurAct h3{
-        margin-top: 4%;
+        margin-left: 5%;
+        align-self: flex-start;
+        font-size: 20px;
     }
     
     footer{
