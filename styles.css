@@ -4,6 +4,10 @@
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
+body{
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+}
 /*Début Nav*/
 nav{
     margin: 0;
@@ -57,6 +61,7 @@ h1{
     margin: 0;
     font-size: 23px;
     margin-bottom: 1%;
+    width: 100%;
 }
 .desc{
     width: 100%;
