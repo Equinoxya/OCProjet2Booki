@@ -4,7 +4,7 @@
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
-
+/*Début Nav*/
 nav{
     margin: 0;
     width: 100%;
@@ -12,7 +12,7 @@ nav{
     margin-bottom: 3%;
 }
 nav img{
-    width: 5%;
+    width: 61px;
     margin: 0;
 }
 .blocNav{
@@ -30,6 +30,7 @@ nav img{
     margin: 0;
     width: 25%;
     height: 100%;
+    padding: 0;
 }
 nav a{
     display: flex;
@@ -40,18 +41,22 @@ nav a{
     color: black;
     text-decoration: none;
 }
+nav a:hover{
+    border-top: 2px solid blue;
+    color: #0065fc;
+}
 .boutonNav{
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
 }
+/*Fin Nav*/
+/*Début main*/
 h1{
     margin: 0;
-}
-nav a:hover{
-    border-top: 2px solid blue;
-    color: #0065fc;
+    font-size: 23px;
+    margin-bottom: 1%;
 }
 .desc{
     width: 100%;
@@ -60,7 +65,7 @@ nav a:hover{
     font-size: 16px;
 }
 
-/*Berre de recherche*/
+/*Barre de recherche*/
 form{
     display: flex;
     width: 35%;
@@ -68,7 +73,6 @@ form{
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
 .barreRecherche{
     width: 100%;
     height: 3em;
@@ -82,7 +86,6 @@ form{
     width: 15%;
     height: 100%;
 }
-
 .loc{
     background-color: #d9d9d9;
     border-radius: 10px 0 0 10px;
@@ -126,7 +129,8 @@ form{
     display: none;
     margin: 0;
 }
-/*Filtres*/
+/*Fin Barre de recherche*/
+/*Début Filtres*/
 .barreFilter{
     font-weight: bold;
     display: flex;
@@ -173,12 +177,7 @@ form{
 .filtres p{
     margin: 0;
 }
-
-
-
-
-
-
+/*Fin filtres*/
 .txt{
     display: flex;
     align-items: center;
@@ -207,21 +206,8 @@ form{
     padding-left: 35%;
     color: #0065fc;
 }
-
-
-
-
-/*Section Cartes*/
-.titlePop{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    padding-top: 9%;
-}
-.titlePop h2{
-    margin: 0;
-}
+/*Section Hébergement*/
+/*Début cartes hébergements*/
 #hebergement {
     display: flex;
     justify-content: space-between;
@@ -245,7 +231,6 @@ form{
 .blue{
     color: #0065fc;
 }
-
 .conteneurs_hebergement{
     display: flex;
     flex-direction: column;
@@ -255,14 +240,6 @@ form{
     margin: 0;
     height: 100%;
     
-}
-.conteneurs_populaire{
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    width: 30%;
-    border-radius: 20px;
-    margin: 0;
 }
 .conteneurs_hebergement h2{
     margin-top: 4%;
@@ -287,7 +264,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 29%;
-    height: 200px;
+    height: 185px;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 5%;
@@ -317,10 +294,25 @@ form{
     height: 35%;
     font-size: 15px;
 }
-
-
-
-
+/*Fin cartes hébergement*/
+/*Début Pop*/
+.titlePop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 9%;
+}
+.titlePop h2{
+    margin: 0;
+}.conteneurs_populaire{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 30%;
+    border-radius: 20px;
+    margin: 0;
+}
 .conteneurs_populaire figure {
     display: flex;
     flex-direction: row;
@@ -359,7 +351,6 @@ form{
     margin: 0;
     font-size: 14px;
 }
-
 .blocLien{
     flex-direction: row;
     text-decoration: none;
@@ -390,7 +381,7 @@ form{
     font-size: 12px;
     height: 40%;
 }
-
+/*Fin carte Pop*/
 .afficherplus{
     width: 20%;
     height: 5%;
@@ -400,9 +391,8 @@ form{
     color: black;
     margin-left: 5%;
 }
-
-
-/*Activités*/
+/*Fin Section hébergement*/
+/*Début Activités*/
 #Activites{
     margin: 0;
     margin-top: 5%;
@@ -453,10 +443,8 @@ form{
     margin-top: 5%;
     margin-left: 7%;
 }
-
-
-/*FOOTER*/
-
+/*Fin Activités*/
+/*Début Footer*/
 footer {
     background: #f2f2f2;
     display: flex;
@@ -465,7 +453,6 @@ footer {
     height: 225px;
     margin: 0;
 }
-
 footer section {
     display: flex;
     flex-direction: column;
@@ -477,7 +464,6 @@ footer section {
     margin-right: 15%;
     padding-left: 5%;
 }
-
 footer a {
     text-decoration: none;
     color: black;
@@ -485,30 +471,14 @@ footer a {
 }
 footer h3 {
     margin: 0;
-
 }
+/*Fin footer*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Début Tablette*/
 @media screen and (max-width:991px) {
     *{
         margin-left: 2%;
         margin-right: 2%;
-    }
-    nav img{
-        width: 9%;
     }
     .menu{
         width: 40%;
@@ -545,6 +515,9 @@ footer h3 {
     }
     .conteneurs_hebergement{
         width: 100%;
+    }
+    .conteneurs_hebergement h2{
+        margin-bottom: 4%;
     }
     .cardsHeb{
         width: 100%;
@@ -588,31 +561,26 @@ footer h3 {
     }
     .conteneurAct a{
         width: 23%;
-        height: 18em;
+        height: 16em;
     }
     .conteneurAct img{
         width: 100%;
-        height: 25vh;
+        height: 22vh;
     }
     .conteneurAct h3{
-        font-size: 16px;
+        font-size: 14px;
     margin-left: 10%;
+    }
+    footer{
+        height: 160px;
     }
     footer section{
         margin-right: 8%;
         font-size: 13px;
     }
 }
-
-
-
-
-
-
-
-
-
-
+/*Fin Tablette*/
+/*Début Mobile*/
 
 @media screen and (max-width:767px) {
     *{
@@ -628,6 +596,7 @@ footer h3 {
         flex-direction: column;
         flex-wrap: nowrap;
         height: 100px;
+        padding: 0;
     }
     nav{
         margin-bottom: 10%;
@@ -644,6 +613,7 @@ footer h3 {
     .menu{
         width: 100%;
         justify-content: space-between;
+        padding-top: 5%;
     }
     .boutonNav{
         border-bottom: #F2F2F2 3px solid;
@@ -678,7 +648,7 @@ footer h3 {
         flex-wrap: wrap;
         align-items: center;
         gap: 10px;
-        width: 90%;
+        width: 95%;
     }
     .filtres{
         width: 48%;
@@ -788,3 +758,4 @@ footer h3 {
         margin-bottom: 20px;
     }
 }
+/*Fin mobile*/
